@@ -1,0 +1,18 @@
+{
+    "txt.py": [
+        {
+            "operation": "PASTE",
+            "lines": 23,
+            "keyStrokeTimeStamp": "Fri Nov 06 2020 23:36:54",
+            "keyStrokeInfo": "import pygame\r\n\r\npygame.init()\r\nWIDTH = HEIGHT = 500\r\nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\r\nfont = pygame.font.SysFont(\"Arial\", 14)\r\n\r\n\r\ndef write(text, x, y, color=\"Coral\",):\r\n    text = font.render(text, 1, pygame.Color(color))\r\n    text_rect = text.get_rect(center=(WIDTH//2, y))\r\n    return text, text_rect\r\n\r\ntext, text_rect = write(\"Hello\", 10, 10) # this will be centered anyhow, but at 10 height\r\nloop = 1\r\nwhile loop:\r\n    for event in pygame.event.get():\r\n        if event.type == pygame.QUIT:\r\n            loop = 0\r\n    screen.blit(text, text_rect)\r\n    pygame.display.update()\r\n\r\npygame.quit()",
+            "position": "1,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Fri Nov 06 2020 23:46:49",
+            "keyStrokeInfo": "",
+            "position": "14,42"
+        }
+    ]
+}
